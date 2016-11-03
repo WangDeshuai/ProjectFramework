@@ -1,0 +1,47 @@
+//
+//  PrefixHeader.pch
+//  DistributionQuery
+//
+//  Created by Macx on 16/10/8.
+//  Copyright © 2016年 Macx. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+/*
+ *   宏定义
+ */
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define SERVICE  @"http://101.200.133.10:9089/"
+
+/*
+ *   头文件
+ */
+#import "HomeVC.h"
+#import "ScanCodeVC.h"
+#import "MyVC.h"
+
+/*
+ * 工具类
+ */
+#import "Engine.h"
+
+
+/*
+ *   第三方
+ */
+#import "SDCycleScrollView.h"//轮播图
+#import "UIView+SDAutoLayout.h"
+#import "UITableView+SDAutoTableViewCellHeight.h"
+#import "UIKit+AFNetworking.h"//异步加载图片
+#import "LCProgressHUD.h"
+
+
+
+
+#endif /* PrefixHeader_pch */
