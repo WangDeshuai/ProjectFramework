@@ -1,5 +1,5 @@
 # ProjectFramework
-如果下载下来项目运行出错，在Build Settings中找到Prefix Header，然后在里面更改.pch的文件路径\n
+如果下载下来项目运行出错，在Build Settings中找到Prefix Header，然后在里面更改.pch的文件路径
                               
      在BaseTableBarVC中，
      NSArray * childItemsArray =@[  @{kClassKey  : @"HomeVC",
