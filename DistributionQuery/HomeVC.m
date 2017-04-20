@@ -37,11 +37,7 @@
     .heightIs(200);//暂时改为200
     
     
-    [Engine getFirstImagesuccess:^(NSDictionary *dic) {
-        
-    } error:^(NSError *error) {
-        
-    }];
+   
 }
 
 #pragma mark --6个btn

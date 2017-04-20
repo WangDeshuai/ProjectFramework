@@ -17,8 +17,12 @@
  */
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define WINDOW [UIApplication sharedApplication].delegate.window
+#define NSUSE_DEFO [NSUserDefaults standardUserDefaults]
+#define JXColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define BG_COLOR [UIColor colorWithRed:238/255.0 green:238/255.0 blue:238/255.0 alpha:1]
 #define SERVICE  @"http://101.200.133.10:9089/"
-
+//192.168.1.103 119.29.83
 /*
  *   头文件
  */
@@ -30,7 +34,7 @@
  * 工具类
  */
 #import "Engine.h"
-
+#import "ToolClass.h"
 
 /*
  *   第三方
@@ -39,9 +43,9 @@
 #import "UIView+SDAutoLayout.h"
 #import "UITableView+SDAutoTableViewCellHeight.h"
 #import "UIKit+AFNetworking.h"//异步加载图片
+#import "AFNetworking.h"
 #import "LCProgressHUD.h"
-
-
+#import "MJRefresh.h"
 
 
 #endif /* PrefixHeader_pch */

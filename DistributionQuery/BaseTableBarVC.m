@@ -24,21 +24,55 @@
     // Do any additional setup after loading the view.
     NSArray *childItemsArray = @[
                                  @{kClassKey  : @"HomeVC",
-                                   kTitleKey  : @"首页",
+                                   kTitleKey  : @"首页1",
                                    kImgKey    : @"hp_hp",
                                    kSelImgKey : @"hp_hp1"},
                                  
                                  @{kClassKey  : @"ScanCodeVC",
-                                   kTitleKey  : @"扫码",
+                                   kTitleKey  : @"扫码1",
                                    kImgKey    : @"hp_scan",
                                    kSelImgKey : @"hp_scan1"},
                                  
                                  @{kClassKey  : @"MyVC",
-                                   kTitleKey  : @"我的",
+                                   kTitleKey  : @"我的1",
                                    kImgKey    : @"hp_me",
                                    kSelImgKey : @"hp_me1"},
+                                
+                                 
                                  
                                  ];
+    
+    
+//    NSArray *childItemsArray = @[
+//                                 @{kClassKey  : @"HomeVC",
+//                                   kTitleKey  : @"首页1",
+//                                   kImgKey    : @"hp_hp",
+//                                   kSelImgKey : @"hp_hp1"},
+//                                 
+//                                 @{kClassKey  : @"",
+//                                   kTitleKey  : @"",
+//                                   kImgKey    : @"",
+//                                   kSelImgKey : @""},
+//                                 
+//                                 @{kClassKey  : @"ScanCodeVC",
+//                                   kTitleKey  : @"扫码2",
+//                                   kImgKey    : @"hp_scan",
+//                                   kSelImgKey : @"hp_scan1"},
+//                                
+//                                 @{kClassKey  : @"",
+//                                   kTitleKey  : @"",
+//                                   kImgKey    : @"",
+//                                   kSelImgKey : @""},
+//                                 
+//                                 @{kClassKey  : @"MyVC",
+//                                   kTitleKey  : @"我的1",
+//                                   kImgKey    : @"hp_me",
+//                                   kSelImgKey : @"hp_me1"},
+//                                 
+//                                 ];
+    
+    
+    
     
     
 
@@ -48,11 +82,14 @@
         BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:vc];
         UITabBarItem *item = nav.tabBarItem;
         item.title = dict[kTitleKey];
+        
         item.image = [UIImage imageNamed:dict[kImgKey]];
-        item.selectedImage = [[UIImage imageNamed:dict[kSelImgKey]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        item.selectedImage = [[UIImage imageNamed:dict[kSelImgKey]]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         [item setTitleTextAttributes:@{NSForegroundColorAttributeName : Global_tintColor} forState:UIControlStateSelected];
         [self addChildViewController:nav];
+        
     }];
+    
 
 }
 
